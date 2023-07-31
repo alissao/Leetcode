@@ -1,3 +1,5 @@
+package leetcode
+
 func removeElement(nums []int, val int) int {
   insertOn := len(nums) - 1
   diffElCount := 0
