@@ -1,1 +1,9 @@
+## Visual Studio Code
 *.code-workspace
+
+## Golang
+go.sum
+
+## Java
+
+## Typescript
