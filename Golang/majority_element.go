@@ -4,7 +4,7 @@ type NumCounter struct {
 	Number  int
 	Counter int
 }
-
+// This solution is bigger than O(n)
 func majorityElementTwoPointers(nums []int) int {
 	var majEl NumCounter = NumCounter{-1, 0}
 	var i, numsLen int = 0, len(nums)
@@ -35,6 +35,7 @@ func majorityElementTwoPointers(nums []int) int {
 	return majEl.Number
 }
 
+//O(n) Solution
 func majorityElement(nums []int) int {
 	var maj int = -1
 	var count int = 0
