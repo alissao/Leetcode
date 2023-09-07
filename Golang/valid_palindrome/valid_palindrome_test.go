@@ -1,8 +1,8 @@
 package validpalindrome_test
 
-
 import (
 	"testing"
+
 	palindrome "leetcode.alisson/Golang/valid_palindrome"
 )
 
@@ -12,9 +12,9 @@ func TestCaseIsPalindrome_1(t *testing.T) {
 	var expected = true
 	if result != expected {
 		t.Fatalf(
-			`StrStr(%s) should have returned %t, but the result was %t.`, 
-			somePhrase, 
-			expected, 
+			`IsPalindrome(%s) should have returned %t, but the result was %t.`,
+			somePhrase,
+			expected,
 			result,
 		)
 	}
@@ -23,12 +23,12 @@ func TestCaseIsPalindrome_1(t *testing.T) {
 func TestCaseIsPalindrome_2(t *testing.T) {
 	var somePhrase string = "race a car"
 	var result = palindrome.IsPalindrome(somePhrase)
-	var expected = true
+	var expected = false
 	if result != expected {
 		t.Fatalf(
-			`StrStr(%s) should have returned %t, but the result was %t.`, 
-			somePhrase, 
-			expected, 
+			`IsPalindrome(%s) should have returned %t, but the result was %t.`,
+			somePhrase,
+			expected,
 			result,
 		)
 	}
@@ -40,9 +40,9 @@ func TestCaseIsPalindrome_3(t *testing.T) {
 	var expected = true
 	if result != expected {
 		t.Fatalf(
-			`StrStr(%s) should have returned %t, but the result was %t.`, 
-			somePhrase, 
-			expected, 
+			`IsPalindrome(%s) should have returned %t, but the result was %t.`,
+			somePhrase,
+			expected,
 			result,
 		)
 	}
