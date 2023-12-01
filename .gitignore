@@ -1,10 +1,16 @@
 ## Visual Studio Code
 *.code-workspace
 
+## IntelliJ
+*.idea
+
 ## Golang
 go.sum
 
 ## Java
+*.jar
+
+## Kotlin
 
 ## Typescript
 
